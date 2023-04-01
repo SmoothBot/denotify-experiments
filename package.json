@@ -16,7 +16,6 @@
 		"build/index.*",
 		"build/types/**/*"
 	],
-	"type": "module",
 	"scripts": {
 		"test": "npm run build && mocha --inspect --require source-map-support/register --bail ./build/test/",
 		"build": "rimraf build && tsc && tsc-alias",
@@ -30,7 +29,8 @@
 	"license": "MIT",
 	"dependencies": {
 		"commander": "^7.2.0",
-		"denotify-client": "^1.1.4"
+		"denotify-client": "^1.1.22",
+		"dotenv": "^16.0.3"
 	},
 	"devDependencies": {
 		"@types/chai": "^4.2.18",

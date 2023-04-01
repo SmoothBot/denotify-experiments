@@ -3,3 +3,7 @@ build
 sandbox
 sand\ box
 debug.log
+
+.DS_Store
+
+.env
